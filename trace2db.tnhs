@@ -1,0 +1,19 @@
+tonatiuh_filename( "C:/Users/user/OneDrive - University of Patras/SCoSCo/WP2-Optical/Tonatiuh-test/parabolic_flat_abs.tnh" );
+
+tonatiuh_numrays(10000);
+
+
+tonatiuh.SetExportPreviousNextPhotonID( true );
+
+tonatiuh.SetExportAllPhotonMap();
+tonatiuh.SetExportPhotonMapType( "SQL_Database" );
+tonatiuh.SetExportTypeParameterValue( "ExportDirectory",  "C:/Users/user/OneDrive - University of Patras/SCoSCo/WP2-Optical/Tonatiuh-test/raw" );
+
+for( var i = 135; i <= 225; i=i+5 ){
+	tonatiuh_sunposition(i,0);
+	var s = i.toString();
+	tonatiuh.SetExportTypeParameterValue( "DBFilename",  s );
+	tonatiuh.Run();
+
+
+}
