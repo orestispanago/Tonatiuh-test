@@ -170,7 +170,7 @@ TSceneKit {
             USE Light+0            . zenith
 
           }          . outputTranslation
-          rotation -1.0000001 4.3711395e-008 -4.3711395e-008  1.5707963 =
+          rotation -1 4.3711388e-008 -4.3711388e-008  1.5707963 =
           USE +1          . outputRotation
           scaleFactor 1 1 1 =
           USE +1          . outputScaleFactor
